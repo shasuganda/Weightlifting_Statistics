@@ -1,0 +1,330 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Weighlifting Statistics Meets</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.619/styles/kendo.common-material.min.css" /> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Gudea&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="css/kendo.rtl.min.css" />
+    <link rel="stylesheet" href="css/kendo.material.min.css" />
+    <link rel="stylesheet" href="css/kendo.material.mobile.min.css" /> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+<div class="header_area">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="logo">
+					<a href=""><img src="img/logo.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="top-menu">
+					<ul>
+						<li class="active"><a href="">Rankings</a></li>
+						<li><a href="">Records</a></li>
+						<li><a href="">Meets</a></li>
+						<li><a href="">Athlete’s Information</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Support Us</a></li>
+						<li><a href=""><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="sub-menu-area">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-7">
+                <div class="second-menu">
+                    <ul>
+                        <li><a href="">My Rank</a></li>
+                        <li><a href="">My Performance</a></li>
+                        <li><a href="">My Success Rate</a></li>
+                        <li><a href="">Compare</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+				<div class="header-bottom-menu">
+                    <div class="profile-st">
+                        <a href="" class="author_name">Hello Sha <i class="fa fa-caret-down"> </i></a>
+<!--                         <ul>
+    <li><a href="">Sign up</a></li>
+    <li><a href="">Log In</a></li>
+</ul> -->
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="main-content-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="content-area">
+					<div class="filter-options-area">
+						<form action="">
+							<div class="select-options">
+								<div class="form-group single-select-option">
+									<select  class="form-control" name="years" id="years">
+										<option value="total">Years</option>
+										<option value="from-to"><b>From             to</b></option>
+										<option value="2008">2008</option>
+										<option value="2009">2009</option>
+										<option value="2010">2010</option>
+										<option value="2011">2011</option>
+										<option value="2012">2012</option>
+										<option value="2013">2013</option>
+										<option value="2014">2014</option>
+										<option value="2015">2015</option>
+										<option value="2016">2016</option>
+										<option value="2017">2017</option>
+										<option value="2018">2018</option>
+										<option value="2019">2019</option>
+									</select>
+								</div>
+                                <div class="form-group single-select-option">
+                                    <select  class="form-control" name="age_group" id="age_group">
+                                        <option value="location">Location</option>
+                                        <option value="worldwide">Worldwide</option>
+                                        <option value="country">Country</option>
+                                        <option value="state_province">State / Province</option>
+                                        <option value="city">City</option>
+                                        <option value="club">Club</option>
+                                    </select>
+                                </div>
+							</div>
+							<div class="search-area">
+								<div class="form-group">
+									<input type="text" name="search" placeholder="Search">
+									<button type="submit" class="search-btn-icon"><i class="fa fa-search"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-form-area">
+                    <table id="grid" class="table-striped">
+                        <colgroup>
+                            <col  style="width:150px;"/>
+                            <col  style="width:400px;"/>
+                            <col  style="width:250px;"/>
+                            <col  style="width:200px;"/>
+                            <col  style="width:200px;"/>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th data-field="date">Date</th>
+                                <th data-field="mname">Meet Name</th>
+                                <th data-field="location">Location</th>
+                                <th data-field="pstatus">Project Status</th>
+                                <th data-field="result"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>06.01.19</td>
+                                <td>IWF Junior World Championships</td>
+                                <td>Suva, Fiji</td>
+                                <td>In Progress</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>04.27.19</td>
+                                <td>Arafura Games</td>
+                                <td>Palmira, Columbia</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>04.23.19</td>
+                                <td>African Championships</td>
+                                <td>Cairo, Egypt</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>04.23.19</td>
+                                <td>Pan-American Championships</td>
+                                <td>Guatemala City, Guatemala</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.01.10</td>
+                                <td>Meet Name</td>
+                                <td>Location</td>
+                                <td>Updated</td>
+                                <td><a href="">See Result</a></td>
+                            </tr>
+                        </tbody>
+                    </table>            
+                </div>                
+            </div>
+        </div>
+
+	</div>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2019.2.619/js/kendo.all.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#grid").kendoGrid({
+            sortable: true
+        });
+    });
+</script>
+
+</body>
+</html>

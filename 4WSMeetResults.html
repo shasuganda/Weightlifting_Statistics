@@ -1,0 +1,813 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Weighlifting Statistics Meets Results</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<!--     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.619/styles/kendo.common-material.min.css" /> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Gudea&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="css/kendo.rtl.min.css" />
+    <link rel="stylesheet" href="css/kendo.material.min.css" />
+    <link rel="stylesheet" href="css/kendo.material.mobile.min.css" /> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="header_area">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="logo">
+					<a href=""><img src="img/logo.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="top-menu">
+					<ul>
+						<li><a href="">Rankings</a></li>
+						<li><a href="">Records</a></li>
+						<li class="active"><a href="">Meets</a></li>
+						<li><a href="">Athlete’s Information</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Support Us</a></li>
+						<li><a href=""><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="sub-menu-area">
+	<div class="container-fluid">
+		<div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-7">
+                <div class="second-menu">
+                    <ul>
+                        <li><a href="">My Rank</a></li>
+                        <li><a href="">My Performance</a></li>
+                        <li><a href="">My Success Rate</a></li>
+                        <li><a href="">Compare</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="header-bottom-menu">
+                    <div class="profile-st">
+                        <a href="" class="author_name">Hello Sha <i class="fa fa-caret-down"> </i></a>
+<!--                         <ul>
+    <li><a href="">Sign up</a></li>
+    <li><a href="">Log In</a></li>
+</ul> -->
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="main-content-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="content-area">
+					<div class="filter-options-area">
+						<form action="">
+							<div class="select-options">
+                                <h2>Pan-American Championships Meet Results</h2>
+								<div class="form-group single-select-option">
+									<label for="gender">Gender</label>
+									<select  class="form-control" name="gender" id="gender">
+										<option value="all">All</option>
+										<option value="male">Male</option>
+										<option value="female">Female</option>
+									</select>
+								</div>
+								<div class="form-group single-select-option">
+									<label for="weight_class">Weight Class</label>
+									<select  class="form-control" name="weight_class" id="weight_class">
+										<option value="all">All</option>
+
+										<option value="">MALE:</option>
+										<option value="">55 kg (121 lb)</option>
+										<option value="">61 kg (134 lb)</option>
+										<option value="">67 kg (148 lb)</option>
+										<option value="">73 kg (161 lb)</option>
+										<option value="">81 kg (179 lb)</option>
+										<option value="">89 kg (196 lb)</option>
+										<option value="">96 kg (212 lb)</option>
+										<option value="">102 kg (225 lb)</option>
+										<option value="">109 kg (240 lb)</option>
+										<option value="">109 kg+ (240 lb+)</option>
+										<option value="">FEMALE:</option>
+										<option value="">45 kg (99.2 lb)</option>
+										<option value="">49 kg (108 lb)</option>
+										<option value="">55 kg (121 lb)</option>
+										<option value="">59 kg (130 lb)</option>
+										<option value="">64 kg (141 lb)</option>
+										<option value="">71 kg (157 lb)</option>
+										<option value="">76 kg (168 lb)</option>
+										<option value="">81 kg (179 lb)</option>
+										<option value="">87 kg (192 lb)</option>
+										<option value="">87 kg+ (191 lb+)</option>
+									</select>
+								</div>
+								<div class="form-group single-select-option">
+									<label for="age_group">Age Group</label>
+									<select  class="form-control" name="age_group" id="age_group">
+										<option value="all">All</option>
+										<option value="senior">Senior</option>
+										<option value="junior">Junior</option>
+										<option value="youth">Youth</option>
+										<option value="masters">Masters</option>
+									</select>
+								</div>
+								<div class="form-group single-select-option">
+									<label for="lifts">Lifts</label>
+									<select  class="form-control" name="lifts" id="lifts">
+										<option value="total">Total</option>
+										<option value="snatch">Snatch</option>
+										<option value="c&j">C&J</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-area">
+								<div class="form-group">
+									<input type="text" name="search" placeholder="Search">
+									<button type="submit" class="search-btn-icon"><i class="fa fa-search"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-form-area">
+                    <table id="grid" class="table-striped">
+                        <colgroup>
+                            <col style="width:60px;" />
+                            <col style="width:200px;"/>
+                            <col style="width:200px;"/>
+                            <col style="width:200px;"/>
+                            <col style="width:90px;"/>
+                            <col />
+                            <col style="width:110px;"/>
+                            <col />
+                            <col />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th data-field="rank">Rank</th>
+                                <th data-field="name">Name</th>
+                                <th data-field="nationality">Nationality</th>
+                                <th data-field="club">Club / Coach</th>
+                                <th data-field="gender">Gender</th>
+                                <th data-field="age">Age</th>
+                                <th data-field="b_weight">B. Weight</th>
+                                <th data-field="snatch">Snatch</th>
+                                <th data-field="cj">C&J</th>
+                                <th data-field="total">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Lasha Talakhadze <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag1.png" alt="">Georgia</td>
+                                <td>Giorgi Asanidze</td>
+                                <td>M</td>
+                                <td>26</td>
+                                <td>97</td>
+                                <td>220</td>
+                                <td>260</td>
+                                <td>480</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Ilya Ilyin <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag2.png" alt="">Kazakhstani</td>
+                                <td>T. Bektemirov</td>
+                                <td>M</td>
+                                <td>31</td>
+                                <td>104</td>
+                                <td>191</td>
+                                <td>246</td>
+                                <td>437</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Sohrab Moradi <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag3.png" alt="">Iranian</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>30</td>
+                                <td>95.94</td>
+                                <td>189</td>
+                                <td>233</td>
+                                <td>417</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>33</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>35</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>37</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>39</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>41</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>43</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>46</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>47</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>49</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>50</td>
+                                <td>Full Name <a href=""><i class="fa fa-instagram"></i></a></td>
+                                <td><img style="width:38px;" src="img/flag.png" alt="">Country</td>
+                                <td>Club name</td>
+                                <td>M</td>
+                                <td>25</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                        </tbody>
+                    </table>            
+                </div>                
+            </div>
+        </div>        
+
+	</div>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2019.2.619/js/kendo.all.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#grid").kendoGrid({
+            sortable: true
+        });
+    });
+</script>
+
+</body>
+</html>

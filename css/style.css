@@ -1,0 +1,469 @@
+@media (min-width: 1200px){
+
+
+}
+body {
+    font-family: 'Gudea';
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 16px;
+    color: #3D3D3D;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+a:focus, a:hover {
+    text-decoration: none !important;;
+}
+img{
+    max-width: 100%;
+}
+.header_area {
+    background: url("../img/navigation7.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 130px;
+}
+
+.top-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.top-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.top-menu ul li a {
+    display: block;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Gudea', sans-serif;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+.top-menu ul li:last-child a {
+    padding-right:  0;
+}
+.top-menu ul li:hover a:before,.top-menu ul li.active a:before {
+    height: 16px;
+    width: 100%;
+    position: absolute;
+    background: #c4c4c4;
+    content: "";
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: .5;
+    z-index: -1;
+}
+.logo {
+    position: absolute;
+    top: 13px;
+}
+
+.top-menu {
+    margin-top: 80px;
+}
+.second-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.second-menu li {
+    display: inline-block;
+}
+
+.second-menu li a {
+    font-size: 24px;
+    color: #3d3d3d;
+    font-family: "Gudea";
+    padding: 0 22px;
+}
+
+.second-menu li:first-child a {
+    padding-left: 0;
+}
+.header-bottom-menu {
+    text-align: right;
+}
+.header-bottom-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header-bottom-menu ul li {
+    display: inline-block;
+}
+
+.header-bottom-menu  a {
+    padding: 0 10px;
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.header-bottom-menu ul li:last-child a {
+    padding-right: 0;
+}
+
+.sub-menu-area {
+    border-bottom: 1px solid #555656;
+    padding: 27px 0;
+}
+
+.select-options {
+    width: 75%;
+    float: left;
+}
+
+.single-select-option {
+    width: 18%;
+    float: left;
+    margin-right: 2%;
+}
+
+.search-area {
+    float: right;
+    width: 24%;
+    position: relative;
+    margin-top: 0;
+}
+.main-content-section {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.search-area input {
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    padding: 6px 20px;
+    width: 100%;
+}
+.search-area.ex-lbl {
+    margin-top: 26px;
+}
+.search-area .search-btn-icon {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    border: none;
+    background: transparent;
+}
+.k-grid td {
+    padding: 5px;
+}
+
+/* .k-grid-content tr td {
+    text-align: center;
+} */
+.k-grid-header th.k-header {
+    text-align: left;
+    padding: 15px 5px;
+}
+.k-filter-row>th:first-child, .k-grid tbody td:first-child, .k-grid tfoot td:first-child, .k-grid-header th.k-header:first-child {
+    border-left-width: 0;
+}
+.table-form-area .k-grid-header .k-header {
+    background-color: #fff;
+    border: none;
+}
+
+.table-form-area .k-grid-content {
+    overflow-y: auto;
+    overflow: hidden;
+}
+
+div.k-grid-footer, div.k-grid-header {
+    padding-right: 0px !important;
+    border-bottom: 1.3px solid #000;
+    margin-bottom: 10px;
+}
+
+.k-block, .k-draghandle, .k-inline-block, .k-widget {
+    border: none;
+}
+
+.k-grid-footer-wrap, .k-grid-header-wrap {
+    border: 0;
+}
+
+.k-grid-header th.k-header>.k-link {
+    color: #000;
+    font-weight: 700;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #E5E5E5;
+}
+.k-grid-content table tbody tr td i {
+    margin-left: 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+.k-grid-content table tbody tr td img {
+    margin-right: 10px;
+}
+.select-options h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.single-faq-area h3 {
+    color: #DC1F26;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.single-faq-area {
+    margin-bottom: 30px;
+}
+
+.single-faq-area p {
+    font-size: 18px;
+}
+.single-contact-area h3 {
+    color: #DC1F26;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.single-contact-area {
+    margin-bottom: 30px;
+}
+
+.single-contact-area p {
+    font-size: 18px;
+}
+.single-pricing-block {
+    border: 2px solid #F0DF47;
+    border-radius: 10px;
+    padding: 0 20px;
+    min-height: 440px;
+}
+
+.single-pricing-block h1 {
+    font-size: 48px;
+    color: #966020;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.single-pricing-block h4 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.single-pricing-block p {
+    font-size: 18px;
+    text-align: left;
+}
+a.btn.btn-red {
+    background: #DC1F26;
+    width: 200px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 22px;
+    padding: 0px 0;
+    margin-top: 30px;
+}
+
+.bottom-call-to-action {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bottom-call-to-action h4 {
+    font-size: 24px;
+}
+
+a.btn.btn-blue {
+    font-size: 18px;
+    background: #244164;
+    border-radius: 25px;
+    padding: 5px 30px;
+    color: #fff;
+    margin-top: 5px;
+}
+.single-pricing-block.silver {
+    border: 2px solid #244164;
+}
+.single-pricing-block.gold {
+    border: 2px solid #DC1F26;
+}
+.single-pricing-block.silver h1 {00
+    color: #969090;
+}
+.single-pricing-block.gold h1 {
+    color: #C37A0B;
+}
+.table-form-area h4 {
+    font-size: 23px;
+    font-weight: 700;
+}
+.section-table-area {
+    margin-bottom: 30px;
+}
+.sign-up-area h3 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.sign-up-area h3 span {
+    font-size: 18px;
+    float: right;
+    margin-top: 17px;
+    font-weight: 400;
+}
+
+.sign-up-area h3 span a {
+    color: #EA3418;
+}
+
+.sign-up-form-area {
+    background: #E5E5E5;
+    padding: 40px 25px;
+    margin-top: 15px;
+    border: 1px solid #333;
+}
+
+.sign-up-form-area p {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.sign-up-form-area form input {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 3px 15px;
+    border: none;
+    font-size: 24px;
+}
+
+.sign-up-form-area form button {
+    background: #EA3418;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding: 5px 40px;
+    margin-top: 10px;
+}
+.sign-up-form-area ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sign-up-form-area ul li {
+    display: inline-block;
+}
+.sign-up-form-area ul li a {
+    display: block;
+    margin-right: 15px;
+}
+.sign-up-form-area ul li a img {
+    width: 50px;
+}
+.sign-up-form-area form {
+    width: 85%;
+    text-align: center;
+}
+.sign-in-area h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.sign-in-area {
+    margin-top: 50px;
+}
+.sign-in-form-area .email {
+    width: 370px;
+    float: left;
+}
+
+.sign-in-form-area .password {
+    width: 370px;
+    float: left;
+}
+
+.sign-in-form-area input {
+    width: 92%;
+    background: #E5E5E5;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 24px;
+}
+
+.sign-in-form-area {
+    overflow: hidden;
+}
+
+.password span a {
+    padding-left: 20px;
+    margin-top: 7px;
+    display: block;
+    color: #3D3D3D;
+    font-size: 18px;
+}
+
+.login .btn-form {
+    background: #EA3418;
+    color: #fff;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 25px;
+    font-size: 24px;
+}
+.social-login p {
+    font-size: 24px;
+}
+
+.social-login ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social-login ul li {
+    display: inline-block;
+}
+
+.social-login ul li a img {
+    width: 55px;
+}
+
+.social-login ul li a {
+    display: block;
+    margin-right: 30px;
+}
+.profile-st p {
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    padding: 0 10px;
+}
+
+.profile-st p:before {
+    width: 100%;
+    height: 15px;
+    background: #eee;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    position: absolute;
+    z-index: -1;
+}
